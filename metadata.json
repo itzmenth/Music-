@@ -1,0 +1,6 @@
+{
+  "name": "Windows Mobile Music",
+  "description": "Authentic Windows Phone and Windows Mobile Metro music player hub with dynamic Live Tiles, panoramic collection, graphic equalizer, and audio synthesis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

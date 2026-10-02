@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --metro-mango: #F09609;
+    --metro-cyan: #1BA1E2;
+    --metro-magenta: #D80073;
+    --metro-lime: #8CBF26;
+    --metro-cobalt: #0050EF;
+    --metro-crimson: #E51400;
+    --metro-emerald: #008A00;
+    --metro-amber: #F0A30A;
+    --metro-violet: #AA00FF;
+    --metro-teal: #00ABA9;
+  }
+
+  body {
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation;
+  }
+}
+
+/* Custom Segoe UI Light typography feel */
+.font-segoe-light {
+  font-family: "Segoe UI Light", "Segoe UI", -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif;
+  font-weight: 300;
+}
+
+.font-segoe {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", sans-serif;
+}
+
+/* Metro Tile 3D Perspective Flip */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Metro Tile Press Effect */
+.metro-tile-press {
+  transition: transform 0.12s cubic-bezier(0.1, 0.9, 0.2, 1);
+}
+.metro-tile-press:active {
+  transform: scale(0.96) perspective(500px) rotateY(-3deg);
+}
+
+/* Hide scrollbars for authentic clean Metro horizontal panoramic scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glass & Scrim overlays */
+.metro-scrim {
+  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.95) 100%);
+}
+
+.metro-light-scrim {
+  background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.85) 60%, rgba(255,255,255,0.98) 100%);
+}
